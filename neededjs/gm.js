@@ -3,7 +3,7 @@ function generateMarkdown(data) {
     if (data.collaborators.trim() !== "") {
       const collabs = data.collaborators.split(/[\,,;,:,\/, ,*,]/);
       collabBadges = collabs.map(ghName => {
-        return `[![GitHub Link](https://img.shields.io/badge/Github-${ghName}-lightgrey.svg)](https://github.com/${ghName})<br>`
+        return (https://img.shields.io/badge/Github-${ghName}-lightgrey.svg)](https://github.com/${ghName})<br>`
       })
     } else {
       collabBadges = "None";
